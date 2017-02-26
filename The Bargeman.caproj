@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>The Bargeman</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>r534v48iowc5</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="DialogBox">
+            <object-type name="DBDialogBox" sid="176184796216348">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="459847733722706">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549738989350965" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\Empty_Screen_Dialog.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DBEnd" sid="144366291997386">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="DBImgHero" sid="778903741012417">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708825220333088" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.501608" original-source="C:\Users\loict\Desktop\construct-gamejam\images\portrait\Hero_Portrait.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DBHeroL1" sid="257215236685496">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="562078462851260">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBHeroL2" sid="483316780741216">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="682613582270806">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBHeroL3" sid="959133767434962">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="698433282887461">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBHeroL4" sid="317451141073564">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="160362385108723">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBImgInterlocutor" sid="209613441162167">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311947460908863" speed="0">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.501608" original-source="C:\Users\loict\Desktop\construct-gamejam\images\portrait\Female_Character_Portrait.png" />
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.501608" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\portrait\Military_portrait.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DBInterlocutorL1" sid="464631999989635">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="956050097394181">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBInterlocutorL2" sid="536498848123369">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="987487695734769">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBInterlocutorL3" sid="747929357415888">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="592160249680450">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBInterlocutorL4" sid="341698319505998">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="816441114111039">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="DBNext" sid="945786996780997">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="DBChoix1" sid="838067811580066">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="DBChoix2" sid="415345795846159">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="SailingInterface">
+            <object-type name="SIActionBox" sid="441480417168366">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577022801584508" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503226" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\interface\INterface_CompasEmpty.png">
+                            <collision-poly>
+                                <point x="0.0435644" y="0.143791" />
+                                <point x="0.958416" y="0.137255" />
+                                <point x="0.992079" y="0.496732" />
+                                <point x="0.938614" y="0.797386" />
+                                <point x="0.49901" y="0.797386" />
+                                <point x="0.0435644" y="0.856209" />
+                                <point x="0" y="0.496732" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIChallengeBarMulti" sid="488695004734987">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="551030157623549" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIChallengeLeftBounce" sid="728978277473796">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="910527560752623">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745473003893540" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0">
+                            <image-point name="Imagepoint 1" x="1.504" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIChallengePlayBall" sid="907995110547207">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="784660933938291">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409201238516840" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="0.992" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIChallengeRightBounce" sid="465095393851168">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="802639574145623">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383584850203122" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIChallengeWinArea" sid="460831899443757">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="189607470930638" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SIInputRessourceFish" sid="638317541071359">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SIIconFish" sid="910899090280510">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291035822412858" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\interface\Icon01Fsh.png">
+                            <collision-poly>
+                                <point x="0.390625" y="0.390625" />
+                                <point x="0.5" y="0.375" />
+                                <point x="0.796875" y="0.203125" />
+                                <point x="0.765625" y="0.5" />
+                                <point x="0.671875" y="0.671875" />
+                                <point x="0.5" y="0.796875" />
+                                <point x="0.171875" y="0.828125" />
+                                <point x="0.203125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SITextComment" sid="144485662228235">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SITextProposition" sid="411426009494050">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SIIconNews" sid="969349726019337">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708783594380844" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\interface\NEwsicon.png">
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0.875" y="0.125" />
+                                <point x="0.890625" y="0.5" />
+                                <point x="0.875" y="0.875" />
+                                <point x="0.5" y="0.890625" />
+                                <point x="0.203125" y="0.796875" />
+                                <point x="0.1875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\interface\Iconennews.png">
+                            <collision-poly>
+                                <point x="0.140625" y="0.140625" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0.875" y="0.125" />
+                                <point x="0.890625" y="0.5" />
+                                <point x="0.875" y="0.875" />
+                                <point x="0.5" y="0.890625" />
+                                <point x="0.203125" y="0.796875" />
+                                <point x="0.1875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SITimeInputHours" sid="286351865454645">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SITimeSeparator" sid="322324055793965">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SITimeInputMinutes" sid="928037375382497">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SITextDay" sid="631455826477866">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SITimeInputDay" sid="202444234847116">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SIIconeDollars" sid="871340087652537">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SIInputResourceDollars" sid="567214196747254">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="SIAnchor" sid="975261971923122">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428686724304382" speed="0">
+                        <frame duration="1" hotspotX="0.503546" hotspotY="0.502762" original-source="C:\Users\loict\Desktop\construct-gamejam\images\AncorRed.png">
+                            <collision-poly>
+                                <point x="0.248227" y="0.19337" />
+                                <point x="0.496454" y="0.00552486" />
+                                <point x="0.751773" y="0.19337" />
+                                <point x="0.617021" y="0.497238" />
+                                <point x="0.843972" y="0.878453" />
+                                <point x="0.496454" y="0.994475" />
+                                <point x="0.156028" y="0.878453" />
+                                <point x="0.382979" y="0.497238" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503546" hotspotY="0.502762" original-source="C:\Users\loict\Desktop\construct-gamejam\images\Ancreblanche1.png">
+                            <collision-poly>
+                                <point x="0.241135" y="0.187845" />
+                                <point x="0.496454" y="0.00552486" />
+                                <point x="0.758865" y="0.187845" />
+                                <point x="0.617021" y="0.497238" />
+                                <point x="0.843972" y="0.878453" />
+                                <point x="0.496454" y="0.994475" />
+                                <point x="0.148936" y="0.883978" />
+                                <point x="0.375887" y="0.497238" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SILeftBackground" sid="493978600922047">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949301147520178" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\interface\bg-left.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="1-Launcher">
+            <object-type name="launcherTitle" sid="582789710298795">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="launcherContextSentence" sid="347107608434570">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="923298701640055">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="launcherBtnBegin" sid="925603999913774">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="948399369159845">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="laucherBackground" sid="517202693818556">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984461052415352" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="launcherImg2" sid="424203690203873">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="872865838729864" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.501608" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\portrait\Portrait_LookALike.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="launcherImg1" sid="906835547915072">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713899612659534" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.501608" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\portrait\Portrait_LookALike.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Shop">
+            <object-type name="shopBox" sid="805869636537186">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="963333443969732">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313444196613965" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501027" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\Empty_Screen_Shop.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.995261" y="0.00821355" />
+                                <point x="0.995261" y="0.991786" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="shopSeller" sid="626823334927428">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500954411605162" speed="5">
+                        <frame duration="1" hotspotX="0.503356" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\portrait\ShopKEeper.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="shopBtnSellFish" sid="168179595614611">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemAnemometer" sid="566853453437592">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemEngine" sid="747619005310787">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemFishingPermit" sid="971309904237727">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemGaz" sid="122820393165013">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemNewspaper" sid="554586052367984">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemNecklace" sid="197471292395693">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemMainsail" sid="152795042605461">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemVegetable" sid="480792748689853">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopTextDailySales" sid="296050808851958">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopTextDayPrice" sid="873525905168261">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopBtnLeave" sid="467526118406480">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopItemGlasses" sid="140790908583083">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopInterlocutorL1" sid="566224198827104">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="887336766503139">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="shopInterlocutorL2" sid="947960182075591">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="932952795425934">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="shopInterlocutorL3" sid="557897969016487">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="596982931623519">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="shopInterlocutorL4" sid="284279959068034">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="189486743684007">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="shopChoix1" sid="633450223977402">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="shopChoix2" sid="494760831060267">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Police patroles">
+            <object-type name="policeBoat1PatroleTop" sid="261413540517528">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344913863361351" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="policeBoat1" sid="692550386267306">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="8Direction" sid="207229015992527">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414875536883999" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.526316" original-source="C:\Users\ltruchot\perso\the_bargeman\img\BiggerPolice.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.916667" y="0.210526" />
+                                <point x="1" y="0.473684" />
+                                <point x="0.916667" y="0.789474" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.0833333" y="0.473684" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="policeBoat1PatroleBottom" sid="256964438879325">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672007314266532" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="0-Utils">
+            <object-type name="Audio" sid="474799674117134">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Mouse" sid="297285249142887">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Tilemap" sid="959142806207889">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\loict\Desktop\construct-gamejam\tiles\../images/tilemapdarker.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Keyboard" sid="633543435655341">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Geo">
+            <object-type name="limit1to2" sid="904832525559515">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347534456823731" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="limit2to3" sid="196383313401339">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724942260017541" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="limitGoltin" sid="365185877015432">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="217597414165517">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377137785472076" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="limitTungo" sid="398499242552977">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="384934816556575">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663386915004398" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cityEwuh" sid="233575796835987">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722187595475569" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\monuments\Icon_village.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.12" />
+                                <point x="0.72" y="0.28" />
+                                <point x="0.86" y="0.5" />
+                                <point x="0.86" y="0.86" />
+                                <point x="0.54" y="0.88" />
+                                <point x="0.14" y="0.86" />
+                                <point x="0.16" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cityGoltinEwuhName" sid="357129493683864">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cityGoltinTantalene" sid="919240847548150">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341770322616083" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Chiffon\Desktop\construct-gamejam\images\monuments\Icon_village.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.12" />
+                                <point x="0.72" y="0.28" />
+                                <point x="0.86" y="0.5" />
+                                <point x="0.86" y="0.86" />
+                                <point x="0.5" y="0.88" />
+                                <point x="0.14" y="0.86" />
+                                <point x="0.16" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cityGoltinTantaleneName" sid="665519726591394">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cityTungoNastassia" sid="315866562492443">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951058644994495" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\monuments\REdIcon_village.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.12" />
+                                <point x="0.72" y="0.28" />
+                                <point x="0.86" y="0.5" />
+                                <point x="0.86" y="0.86" />
+                                <point x="0.52" y="0.86" />
+                                <point x="0.14" y="0.86" />
+                                <point x="0.16" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cityTungoNastassiaName" sid="268770380820739">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cityTungoPraskovia" sid="205212096842242">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812494173751206" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\monuments\REdIcon_village.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.12" />
+                                <point x="0.72" y="0.28" />
+                                <point x="0.86" y="0.5" />
+                                <point x="0.86" y="0.86" />
+                                <point x="0.5" y="0.9" />
+                                <point x="0.14" y="0.86" />
+                                <point x="0.16" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cityTungoPraskoviaName" sid="457917163519820">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-type name="boat" sid="249295465987273">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="767986630196950">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="796380630503640">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="782274181703948">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841332210411862" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\NEWBOAT1.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.196429" />
+                            <point x="0.607143" y="0" />
+                            <point x="1" y="0.482143" />
+                            <point x="0.598214" y="0.991071" />
+                            <point x="0.0334821" y="0.794643" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\NEWBOAT2.png">
+                        <collision-poly>
+                            <point x="0.589286" y="0" />
+                            <point x="1" y="0.491071" />
+                            <point x="0.584821" y="1" />
+                            <point x="0.0446429" y="0.794642" />
+                            <point x="0.0446429" y="0.21875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\NEWBOAT3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\NEWBOAT&apos;.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wind" sid="167778608524830">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758353990664823" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="homeTungo" sid="359569572606130">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175475857861759" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\monuments\RedIcon_Home.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.28" />
+                            <point x="0.5" y="0.12" />
+                            <point x="0.72" y="0.28" />
+                            <point x="0.94" y="0.5" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.5" y="0.66" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fishingArea" sid="170424606549221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441721412808998" speed="4">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\fish\Copie de FishZOne4.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\fish\Copie de FishZOne5.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\fish\Copie de FishZOne6.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\fish\Copie de FishZone7.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\loict\Desktop\construct-gamejam\images\fish\Copie de FishZOne8.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="night" sid="569979929662706">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="635175857290520">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379220180309919" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="homeText" sid="438571093680390">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="shopTungo" sid="991020462220925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412687724277669" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loict\Desktop\construct-gamejam\images\monuments\RedIcon_Shop.png">
+                        <collision-poly>
+                            <point x="0.12" y="0.12" />
+                            <point x="0.88" y="0.12" />
+                            <point x="0.92" y="0.5" />
+                            <point x="0.9" y="0.9" />
+                            <point x="0.1" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="playerInventory" sid="829141385014263">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="SIAnemometre" sid="338027000910278">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584614248341531" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ltruchot\perso\the_bargeman\img\compas_no.png">
+                        <collision-poly>
+                            <point x="0.146429" y="0.149635" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.145985" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.854015" />
+                            <point x="0.5" y="1" />
+                            <point x="0.146429" y="0.850365" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="779468343401786">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="678073896622720">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="771784699458190">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="891417995045808">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="725871072547585">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="262028872855019">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565491278718056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ltruchot\perso\the_bargeman\img\mouse.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text6" sid="266469010800030">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="271809199616932">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="echap_instruction" sid="368939049936576">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="559889842363100">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997321627999476" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\ULG\Desktop\RIVES D EUROPE WEBSITE\88x31.png">
+                        <collision-poly>
+                            <point x="0.0113636" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.988636" y="0.0322581" />
+                            <point x="0.988636" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0113636" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="335232053956590">
+            <plugin id="Browser" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Launcher.xml</layout>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game Event sheet.xml</event-sheet>
+        <event-sheet>Launcher Event sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="14" />
+        <global-instance type="Keyboard" uid="15" />
+        <global-instance type="Audio" uid="49">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="126" />
+    </global-instances>
+    <sounds-folder>
+        <file name="FX_zone_peche.m4a" />
+        <file name="FX_zone_peche.ogg" />
+        <file name="FX_amarre_hissée.ogg" />
+        <file name="FX_amarre_larguée.ogg" />
+        <file name="FX_police.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="passeurs.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Launcher Event sheet</name>
+    <events>
+        <comment>PY : event sheet ne sert à rien ? à supprimer ?</comment>
+    </events>
+</c2eventsheet>
